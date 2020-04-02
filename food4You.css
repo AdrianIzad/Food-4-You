@@ -21,9 +21,10 @@ h2 {
     text-shadow: 2px 2px black;
 }
 
-.container {
+.container.index {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 16%;
+    margin: 0% 15% !important;
     color: red
 }
 
