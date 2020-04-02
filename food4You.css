@@ -1,9 +1,10 @@
-
-
 body {
     background-image: url("https://images.unsplash.com/photo-1550728193-be87c574be86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-  background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
 }
+
 
 /* landing page */
 
@@ -11,20 +12,18 @@ h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 60px;
     color: red;
-    text-shadow: 2px 2px black; 
+    text-shadow: 2px 2px black;
 }
 
 h2 {
-
-  font-family: 'Fredoka One', cursive;
-  color: red;
-  text-shadow: 2px 2px black; 
-
+    font-family: 'Fredoka One', cursive;
+    color: red;
+    text-shadow: 2px 2px black;
 }
 
 .container {
     text-align: center;
-    padding-top: 16%;
+    padding-top: 5%;
     color: red
 }
 
@@ -34,87 +33,202 @@ h2 {
 }
 
 .lead {
-  font-weight: normal;
+    font-weight: normal;
 }
+
 
 /* home Page */
 
-/* The sidebar menu */
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 20%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: rgba(255, 248, 248, 0.8);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 10%;
-    border-right: 2px solid black;
-    text-align: center;
-    letter-spacing: 2px;
-    line-height: 50px;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color:red;
-  }
-  
-  /* Style page content */
-  .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
 
-  a {
-      align-content: center;
-  }
+/* The sidebar menu */
+
+@media screen and (min-width:600px) {
+    .sidenav {
+        height: 100%;
+        /* Full-height: remove this if you want "auto" height */
+        width: 20%;
+        /* Set the width of the sidebar */
+        position: fixed;
+        /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background-color: rgba(255, 248, 248, 0.8);
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 10%;
+        border-right: 2px solid black;
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 50px;
+        display: inline-block;
+    }
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: 22%;
+    }
+    div.card {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .sidenav {
+        display: none;
+    }
+}
+
+
+/* The navigation menu links */
+
+@media screen and (min-width:600px) {
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+    }
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: red;
+}
+
+@media screen and (min-width: 600px) {
+    .navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        background-color: rgba(255, 248, 248, 1.0);
+        margin-bottom: 10%;
+        margin-right: 0%;
+        color: black;
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+    }
+    .container {
+        padding-top: 10%;
+        width: 100%;
+    }
+    div.row {
+        margin-left: 15%;
+        margin-bottom: 5%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    div.card {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+a {
+    align-content: center;
+}
 
 .about {
-  background-color: rgba(255, 248, 248, 0.9);
-  margin-right: 5%;
-  border: none;
+    background-color: rgba(255, 248, 248, 0.9);
+    margin-top: 5%;
+    border: none;
+    width: 95%;
 }
 
 .pics {
-  margin:10px auto;
-  max-width: 1000px;
-  padding-top: 0%;
-  padding-bottom: 10px;
-  background-color: white;
-  text-align: center;
-}
-
-#square1 {
-  width: 100%;
-  height: 700px;
-  background: url("https://images.unsplash.com/photo-1580916919606-647d8ac4a8de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")  50% 50% no-repeat;
-  padding-bottom: 30%;
-  float: left;
-  margin: 1.66%;
-  border-radius: 15%;
-  border: 3px solid black ;
-
+    margin: 10px 35px;
+    max-width: 1000px;
+    padding-top: 0%;
+    padding-bottom: 10px;
+    background-color: white;
+    text-align: center;
 }
 
 #dishOfDay {
- background-color: white
+    background-color: white
 }
 
 .checked {
-  color: orange;
+    color: orange;
 }
 
 
+/** Contact **/
 
+#contact {
+    margin-top: 15%;
+    height: 500px;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
 
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.card {
+    border: 2px solid red;
+    padding: 0px !important;
+}
+
+.form {
+    margin-bottom: 5%;
+    background-color: rgba(255, 248, 248, 0.8);
+    border: 2px solid black;
+    color: red;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    margin-left: 25%;
+    margin-right: 10%;
+}
+
+.form p {
+    font-size: 1.5rem;
+}
+
+#ingredients {
+    height: 200px;
+    width: 200px;
+}
+
+div .button {
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+input {
+    display: block;
+}
+
+label {
+    padding-top: 5px;
+}
